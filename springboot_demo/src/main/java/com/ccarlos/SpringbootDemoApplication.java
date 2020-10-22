@@ -1,13 +1,13 @@
-package com.ccarlos.springboot;
+package com.ccarlos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootCodeApplication {
+public class SpringbootDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootCodeApplication.class, args);
+        SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 
 }
