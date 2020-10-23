@@ -1,5 +1,6 @@
 package com.ccarlos.springboot;
 
+import com.ccarlos.config.SimpleBean;
 import com.ccarlos.controller.HelloController;
 import com.ccarlos.pojo.MyProperties;
 import com.ccarlos.pojo.Person;
@@ -86,6 +87,14 @@ public class SpringbootDemoApplicationTests {
     @Test
     public void placeholderTest() {
         System.out.println(description);
+    }
+
+    @Autowired
+    private SimpleBean simpleBean;
+
+    @Test
+    public void zdyStarterTest() {
+        System.out.println(simpleBean);
     }
 
 }
