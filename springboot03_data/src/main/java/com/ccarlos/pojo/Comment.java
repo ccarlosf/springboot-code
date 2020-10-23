@@ -1,12 +1,21 @@
 package com.ccarlos.pojo;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name = "t_comment")
+//@Entity(name = "t_comment")
 public class Comment {
 
-
+    @Id //表明映射主键id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;  //评论id
+
     private String content; //评论内容
+
     private String author; //评论作者
+
+    @Column(name = "a_id")
     private Integer aId; //外键：表示当前这条评论是属于那篇文章
 
     @Override
