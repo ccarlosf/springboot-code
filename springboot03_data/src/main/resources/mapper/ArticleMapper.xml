@@ -4,7 +4,7 @@
 
 <mapper namespace="com.ccarlos.mapper.ArticleMapper">
 
-    <select id="selectArticle" parameterType="int" resultType="article">
+    <select id="selectArticle" parameterType="int" resultType="Article">
         select * from t_article where id = #{id}
     </select>
 </mapper>
